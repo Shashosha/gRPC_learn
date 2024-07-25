@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package system_info;
+
+service SystemInfoService {
+  rpc SysInfo(SysInfoRequest) returns (SysInfoResponce);
+}
+
+message SysInfoRequest {
+  string message = 1;
+}
+
+message SysInfoResponce {
+  string message = 4;
+}
